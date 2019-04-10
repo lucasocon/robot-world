@@ -1,0 +1,24 @@
+robot_builder:
+  cron: "*/1 * * * *"
+  class: "RobotBuilder"
+  queue: default
+
+factory:
+  cron: "*/1 * * * *"
+  class: "FactoryJob"
+  queue: default
+
+robot_guard:
+  cron: "*/30 * * * *"
+  class: "GuardRobot"
+  queue: default
+
+robot_buyer:
+  cron: "0 */1 * * *"
+  class: "RobotBuyer"
+  queue: default
+
+robot_seller:
+  cron: "0 */1 * * *"
+  class: "RobotSeller"
+  queue: default

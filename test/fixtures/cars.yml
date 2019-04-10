@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  wheel_id: 
+  chassis_id: 
+  laser_id: 
+  computer_id: 
+  engine: 
+  seat_id: 
+  price: 9.99
+  cost_price: 9.99
+  year: 1
+  model_name: MyString
+
+two:
+  wheel_id: 
+  chassis_id: 
+  laser_id: 
+  computer_id: 
+  engine: 
+  seat_id: 
+  price: 9.99
+  cost_price: 9.99
+  year: 1
+  model_name: MyString

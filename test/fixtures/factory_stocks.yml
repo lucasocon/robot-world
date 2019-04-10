@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  car_model: MyString
+  stock: 1
+
+two:
+  car_model: MyString
+  stock: 1
