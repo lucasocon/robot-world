@@ -7,60 +7,40 @@ Things you may want to cover:
 
 * Ruby version
 
-  ```
     ruby '2.3.1'
-  ```
 
 * Configuration
 
-  ```
     bundle install
-  ```
 
 * Database creation
 
-  ```
     rake db:create
-  ```
 
 * Database initialization
 
-  ```
     rake db:migrate
-  ```
 
 * Services (job queues)
 
-    ```
         factory_job: is in charge of pass cars for the different stages
-    ```
-    ```
-        guard_robot: is in charge of send failures notifications and transfer stock from factory to store
-    ```
-    ```
-        robot_builder: is in charge of create cars, assemble parts and determine if has or not failures
-    ```
-    ```
-        robot_buyer: is in charge of realize purchases from the store 
-    ```
-    ```
-        lib/factory: is in charge to assign to new cars created the model, the year, the failures and generate codes for orders
-    ```
 
+        guard_robot: is in charge of send failures notifications and transfer stock from factory to store
+
+        robot_builder: is in charge of create cars, assemble parts and determine if has or not failures
+
+        robot_buyer: is in charge of realize purchases from the store 
+
+        lib/factory: is in charge to assign to new cars created the model, the year, the failures and generate codes for orders
 
 * Proposal for manage delay in stock transfers
 
-  ```
     if there is no stock for a car to be sell, an order with status pending is created and stock from factory is decremented, robot `robot_seller` was created with the task to verify which orders are pending and if in the current momento of verification, there is stock to mark the order as delivered, so sells are not affected is there is no stock in the store, the sell is completed by the delivery is delayed
-  ```
 
 * How to run
 
   - run redis
-    ```
       redis-server
-    ```
+      
   - run sidekiq
-    ```
       sidekiq
-    ``
